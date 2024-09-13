@@ -301,6 +301,7 @@
           .then((response) => response.json())
           .then((data) => {
             document.getElementById("waitingMessage").style.display = "none";
+            console.log(fromData);
   
             if (data.result === "success") {
               form.reset();
